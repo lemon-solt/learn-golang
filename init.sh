@@ -11,5 +11,7 @@ echo "export PATH=$ENV_GOPATH" >> /home/vagrant/.bashrc
 source /home/vagrant/.bashrc
 rm -rf $GOFILE
 
+sudo apt update
+sudo apt install curl
 
 echo "<<< Golang 環境構築終了 >>>"
