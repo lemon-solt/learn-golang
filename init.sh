@@ -2,16 +2,16 @@
 
 echo "<<< Golang 環境構築開始 >>>"
 
+sudo apt update
+
 GOFILE=go1.20.4.linux-amd64.tar.gz
 wget https://go.dev/dl/$GOFILE
 sudo tar -C /usr/local -xzf $GOFILE
-
-ENV_GOPATH=$PATH:/usr/local/go/bin
-echo "export PATH=$ENV_GOPATH" >> /home/vagrant/.bashrc
-source /home/vagrant/.bashrc
 rm -rf $GOFILE
 
-sudo apt update
-sudo apt install curl
+echo "export PATH=$PATH:/usr/local/go/bin" >> /home/vagrant/.bashrc
+source /home/vagrant/.bashrc
+
+# https://pkg.go.dev/golang.org/x/tools/gopls#section-readme
 
 echo "<<< Golang 環境構築終了 >>>"

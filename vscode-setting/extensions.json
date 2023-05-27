@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "golang.Go", // go
+    "ecmel.vscode-html-css", // html
+    "dbaeumer.vscode-eslint", // eslint
+    "esbenp.prettier-vscode", // prettier
+    "EditorConfig.EditorConfig" // editorconfig
+  ]
+}
